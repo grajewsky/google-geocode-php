@@ -1,0 +1,29 @@
+{
+    "name": "gappsky/google-geocode-php",
+    "type": "library",
+    "autoload": {
+        "Gappsky\\GoogleApi\\Geocode\\": "src/"
+    },
+    "autoload-dev": {
+        "Gappsky\\GoogleApi\\Geocode\\Tests\\": "tests/"
+    },
+    "require": {
+        "php": "^7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "vlucas/phpdotenv": "^5.2"
+    },
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Lukasz Grajewski",
+            "email": "grajewski.lukasz@wp.pl"
+        }
+    ],
+    "description": "Google Geocode API PHP SDK",
+    "scripts": {
+        "test": "phpunit"
+    }
+}
