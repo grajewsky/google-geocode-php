@@ -15,5 +15,8 @@ class LaravelServiceProvider extends ServiceProvider
                 ? $app['config']['google-geocode.key'] : null;
             return new GoogleGeocodeApi($key);
         });
+
+        $this->mergeConfigFrom(__DIR__ . "/../config/google-geocode.php", "google-geocode");
+
     }
 }
