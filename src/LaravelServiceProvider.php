@@ -10,7 +10,7 @@ class LaravelServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->singleton("GoogleGeocodeApi", function ($app) {
+        $this->app->singleton(GoogleGeocodeApi::class, function ($app) {
             $key = isset($app['config']['google-geocode.key'])
                 ? $app['config']['google-geocode.key'] : null;
             return new GoogleGeocodeApi($key);
