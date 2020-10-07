@@ -22,7 +22,7 @@
         "phpunit/phpunit": "^8.0",
         "vlucas/phpdotenv": "^5.2"
     },
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Lukasz Grajewski",
