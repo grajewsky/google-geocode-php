@@ -75,12 +75,14 @@ class GoogleGeocodeApi
                 return $results;
         }
 
-        throw new GoogleGeocodeException("Error. Google geocode status code: {$this->status}");
+        throw new GoogleGeocodeException($this->status, "Error. Google geocode status code: {$this->status}");
     }
 
     public function withHeaders(array $headers): array
     {
         $this->headers = $headers;
+
+        return $headers;
     }
 
     public function getStatus()
